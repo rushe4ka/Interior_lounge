@@ -11,7 +11,96 @@
   <link rel="apple-touch-icon" href="img/favicons/favicon-apple.png">
   <link rel="manifest" href="manifest.webmanifest">
 </head>
-<body>
 
+<body>
+  <header class="header" id="index-top">
+    <a href="#">
+      <img src="../source/img/logo.svg" width="262" height="47" alt="логотип Interior Lounge."></a>
+    <nav>
+      <ul class="main-nav">
+        <li class="nav-item">
+          <a href="#">Наши проекты</a>
+          <div class="nav-projects-container">
+            <ul class="nav-projects">
+              <li><a href="#">Tomazzi Hall</a></li>
+              <li><a href="#">Lounge Hall</a></li>
+              <li><a href="#">Astra Hall</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="#">Контакты</a>
+        </li>
+        <li class="nav-item">
+          <a href="#reviews">Оставить отзыв</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Дизайн общественных интерьеров</h1>
+    <section class="main-section">
+      <h2>Кейс клубного дома Tomazzi&nbsp;Hall</h2>
+      <img src="../source/img/tomazzi_banner.jpg" width="1110" height="400" alt="Общий план помещения Tomazzi Hall.">
+      <p class="important-text">
+        Создать объект, подобного которому в&nbsp;Санкт-Петербурге еще не&nbsp;было,&nbsp;&mdash; такую задачу поставил перед собой девелопер Interior Lounge, продумывая клубный дом Tomazzi Hall. Над экстерьером комплекса работала команда одного из&nbsp;крупнейших архитектурных Бюро России&nbsp;&mdash; &laquo;Студия&nbsp;11&raquo; разработал концепцию, а&nbsp;мы&nbsp;оформили интерьер 10&nbsp;парадных и&nbsp;3&nbsp;лаунж-зон.
+      </p>
+      <p class="info-text">
+        Заказчик знал команду, следил за&nbsp;нашей деятельностью, поэтому никого больше не&nbsp;рассматривал&nbsp;&mdash; поручил дизайн парадных и&nbsp;лаунж-зон нам. Основными моментами, на&nbsp;которые мы&nbsp;оринтировались, стали:
+      </p>
+      <ul>
+        <li>Источники вдохновения планировалось искать в&nbsp;строгой геометрии, модерне и&nbsp;духе &laquo;ревущих двадцатых&raquo;;</li>
+        <li>Необходимо было выдержать дорогой и&nbsp;одновременно элегантный стиль;</li>
+        <li>Ключевой элемент дизайна любого общественного пространства&nbsp;&mdash; удобство для жителей.</li>
+      </ul>
+      <div class="img-carousel">
+        <img src="../source/img/tomazzi_1.jpg" alt="Вид сверху изнутри лестницы.">
+        <img src="../source/img/tomazzi_2.jpg" alt="Вид снизу на интерьер лифтового холла."></div>
+    </section>
+    <section class="vision">
+      <h3>Начало работы и&nbsp;источники вдохновения</h3>
+      <p class="columns">
+        Над экстерьером комплекса работала команда одного из&nbsp;крупнейших архитектурных бюро России&nbsp;&mdash; &laquo;Студия&nbsp;11&raquo;, а&nbsp;мы&nbsp;оформили интерьер 10&nbsp;парадных и&nbsp;3&nbsp;лаунж-зон.<br>
+        Заказчик знал команду, следил за&nbsp;нашей деятельностью, поэтому никого больше не&nbsp;рассматривал&nbsp;&mdash; поручил дизайн парадных и&nbsp;лаунж-зон нам.
+      </p>
+      <p class="quote-text">
+        &laquo;Нам хотелось поддержать внешнюю архитектурную концепцию, но&nbsp;внутри добавить что-то необычное. Сделать некое подобие матрешки, чтобы все время открывались новые смыслы и&nbsp;элементы&raquo;.</p>
+    </section>
+    <section class="reviews" id="reviews">
+      <h3>Оставить отзыв</h3>
+      <form class="own-review">
+        <textarea class="own-review__text" name="own-review" cols="30" rows="10" placeholder="Расскажите, что вы думаете о проекте"></textarea>
+        <input class="own-review__name" type="text" placeholder="Ваше имя">
+        <div class="own-review__submit-container">
+          <button class="own-review__submit" type="submit">Отправить</button>
+          <span class="own-review__reminder">Отзыв будет добавлен после проверки модератором</span>
+        </div>
+      </form>
+      <div class="user-reviews-container">
+        <div class="user-review">
+          <img src="../source/img/review_grachev.jpg" width="50" height="50" alt="Фото пользователя, оставившего отзыв.">
+          <span class="user-review__name">Иван Грачев</span>
+          <p class="user-review__text">
+            Очень самобытный и&nbsp;необычный проект.
+          </p>
+        </div>
+        <div class="user-review">
+          <img src="../source/img/review_rachinskaja.jpg" width="50" height="50" alt="Фото пользователя, оставившего отзыв.">
+          <span class="user-review__name">Мария Рачинская</span>
+          <p class="user-review__text">
+            Мне особенно понравилось решение лестничных клеток. Кружки вообще очень стильные!
+          </p>
+        </div>
+        <div class="user-review">
+          <img src="../source/img/review_svetlana.jpg" width="50" height="50" alt="Фото пользователя, оставившего отзыв.">
+          <span class="user-review__name">Светлана</span>
+          <p class="user-review__text">
+            Очень нравится, что в&nbsp;городе развиваются такие проекты. Надеюсь, такие проекты скоро будут не&nbsp;только в&nbsp;частных домах, но&nbsp;и&nbsp;в&nbsp;кафе, музеях, театрах. Я&nbsp;бы сходила!
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
