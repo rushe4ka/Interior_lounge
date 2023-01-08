@@ -243,7 +243,21 @@ ul {
 }
 
 .list li {
+  position: relative;
   margin-bottom: 8px;
+}
+
+.list li::before {
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: -25px;
+  width: 8px;
+  height: 8px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: #f5d581;
+  transform: rotate(45deg);
 }
 
 .carousel {
