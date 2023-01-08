@@ -3,8 +3,8 @@
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url("../fonts/Montserrat-Medium.woff") format("woff"),
-    url("../fonts/Montserrat-Medium.woff2") format("woff2");
+  src: url("/source/fonts/Montserrat-Medium.woff") format("woff"),
+    url("/source/fonts/Montserrat-Medium.woff2") format("woff2");
 }
 
 @font-face {
@@ -12,8 +12,8 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("../fonts/Montserrat-Regular.woff") format("woff"),
-    url("../fonts/Montserrat-Regular.woff2") format("woff2");
+  src: url("/source/fonts/Montserrat-Regular.woff") format("woff"),
+    url("/source/fonts/Montserrat-Regular.woff2") format("woff2");
 }
 
 @font-face {
@@ -21,8 +21,8 @@
   font-style: italic;
   font-weight: 300;
   font-display: swap;
-  src: url("../fonts/Montserrat-LightItalic.woff") format("woff"),
-    url("../fonts/Montserrat-LightItalic.woff2") format("woff2");
+  src: url("/source/fonts/Montserrat-LightItalic.woff") format("woff"),
+    url("/source/fonts/Montserrat-LightItalic.woff2") format("woff2");
 }
 
 *,
@@ -189,7 +189,7 @@ ul {
   height: 9px;
   background-repeat: no-repeat;
   background-position: 0 0;
-  background-image: url("../img/arrow.svg");
+  background-image: url("/source/img/arrow.svg");
 }
 
 .nav-projects {
