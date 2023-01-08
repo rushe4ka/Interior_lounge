@@ -144,20 +144,93 @@ ul {
   color: #000000;
 }
 
+.link--active {
+  color: #9f7303;
+}
+
 /* Шапка */
 
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 10px;
-  padding-bottom: 18px;
+  padding-top: 13px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #f5d581;
+  background-color: #ffffff;
 }
 
 .main-nav {
   display: flex;
-  gap: 40px;
+  gap: 15px;
   margin: 0;
+  background-color: transparent;
+}
+
+.nav-item {
+  position: relative;
+  height: 40px;
+}
+
+.nav-item a {
+  display: block;
+  padding: 6px 23px;
+}
+
+.nav-item--button-review {
+  height: 40px;
+  outline: 1px solid #9f7303;
+  outline-offset: -1px;
+  border-radius: 8px;
+}
+
+.nav-item--button-review:hover {
+  background-color: #fffdf8;
+}
+
+.nav-item--button-review:active {
+  background-color: #fff7e3;
+}
+
+.nav-item--projects::after {
+  position: absolute;
+  content: "";
+  top: 18px;
+  right: 5px;
+  width: 13px;
+  height: 9px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-image: url("../img/Arrow.svg");
+}
+
+.nav-projects {
+  display: none;
+  position: absolute;
+  width: 200px;
+  top: 39px;
+  left: 23px;
+  padding: 26px 16px;
+  padding-bottom: 10px;
+  z-index: 9;
+  background-color: #ffffff;
+  box-shadow:
+    0 -10px 0 #ffffff,
+    0 0 5px rgb(97, 97, 97, 0.18);
+}
+
+.nav-item:focus-within .nav-projects {
+  display: block;
+}
+
+.nav-projects li {
+  padding: 0;
+  margin-bottom: 20px;
+  line-height: 22px;
+}
+
+.nav-projects a {
+  padding: 0;
 }
 
 /* Основное содержимое */
@@ -212,6 +285,8 @@ ul {
   border-top: 1px solid #f5d581;
   border-bottom: 1px solid #f5d581;
 }
+
+/* Отзывы */
 
 .reviews {
   padding-top: 75px;
