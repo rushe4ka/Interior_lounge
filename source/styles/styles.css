@@ -61,7 +61,6 @@ button {
   margin: -1px;
   padding: 0;
   border: 0;
-  clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
@@ -78,6 +77,7 @@ button {
   margin: 0 auto;
 
   font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
   font-size: 18px;
   font-weight: 400;
   line-height: 27px;
@@ -85,7 +85,8 @@ button {
 }
 
 .main {
-  background-color: #f4efe2;
+  background-color: #fffdf8;
+  padding-top: 72px;
 }
 
 .container {
@@ -93,11 +94,44 @@ button {
   margin: 0 auto;
 }
 
-.main-title {
+h1 {
+  margin: 0;
+
   font-style: normal;
   font-weight: 500;
   font-size: 48px;
   line-height: 59px;
+}
+
+h2 {
+  margin: 0;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 49px;
+  color: #9f7303;
+}
+
+h3 {
+  margin: 0;
+  margin-bottom: 33px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+  color: #9f7303;
+}
+
+p {
+  margin: 0;
+  margin-bottom: 27px;
+  line-height: 150%;
+}
+
+ul {
+  list-style: none;
 }
 
 .link {
@@ -108,4 +142,166 @@ button {
   font-weight: 400;
   line-height: 27px;
   color: #000000;
+}
+
+/* Шапка */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 18px;
+}
+
+.main-nav {
+  display: flex;
+  gap: 40px;
+  margin: 0;
+}
+
+/* Основное содержимое */
+
+.main-section {
+  padding-top: 32px;
+  padding-bottom: 64px;
+}
+
+.banner {
+  margin: 56px 0;
+}
+
+.text-important {
+  color: #9f7303;
+}
+
+.list {
+  margin: 0;
+  margin-bottom: 32px;
+  padding: 5px 27px;
+}
+
+.list li {
+  margin-bottom: 8px;
+}
+
+.carousel {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  margin-bottom: 73px;
+}
+
+.columns {
+  column-count: 2;
+  column-gap: 30px;
+}
+
+.blockquote {
+  width: 920px;
+  margin: 50px auto;
+  padding: 40px 94px;
+
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 150%;
+  text-align: center;
+  color: #9f7303;
+  border-top: 1px solid #f5d581;
+  border-bottom: 1px solid #f5d581;
+}
+
+.reviews {
+  padding-top: 75px;
+  padding-bottom: 22px;
+  background-color: #f4efe2;
+}
+
+.reviews h3 {
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.own-review {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 56px;
+}
+
+.own-review__text {
+  width: 100%;
+  padding: 16px;
+}
+
+.own-review__name {
+  width: 540px;
+  height: 64px;
+  padding: 16px;
+}
+
+.own-review__name::placeholder,
+.own-review__text::placeholder {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000000;
+  opacity: 0.3;
+}
+
+.own-review__submit-container {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.own-review__submit {
+  padding: 19px;
+  width: 285px;
+  height: 64px;
+
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #9f7303;
+}
+
+.own-review__reminder {
+  width: 225px;
+  font-size: 12px;
+  line-height: 125%;
+  opacity: 0.7;
+}
+
+.user-reviews-container {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding: 56px 0;
+  padding-top: 50px;
+  border-top: 1px solid #f5d581;
+}
+
+.user-review {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.user-review__wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.user-review__name {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.user-review__text {
+  margin-bottom: 0;
 }
