@@ -306,15 +306,35 @@ ul {
   margin-bottom: 56px;
 }
 
-.own-review__text {
+.own-review__text,
+.own-review__name {
   width: 100%;
   padding: 16px;
+
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000000;
+
+  border: 1px solid #f5d581;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+.own-review__text:active,
+.own-review__text:focus,
+.own-review__text:focus-visible,
+.own-review__name:active,
+.own-review__name:focus,
+.own-review__name:focus-visible {
+  border: 1px solid #9f7303;
+  box-shadow: inset 0 4px 4px rgba(245, 213, 129, 0.25);
+  outline: none;
 }
 
 .own-review__name {
   width: 540px;
   height: 64px;
-  padding: 16px;
 }
 
 .own-review__name::placeholder,
@@ -341,7 +361,18 @@ ul {
   font-weight: 400;
   font-size: 18px;
   color: #ffffff;
+
+  border: none;
+  border-radius: 8px;
   background-color: #9f7303;
+}
+
+.own-review__submit:hover {
+  background-color: #856103;
+}
+
+.own-review__submit:active {
+  background-color: #684c05;
 }
 
 .own-review__reminder {
