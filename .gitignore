@@ -5,7 +5,7 @@
 *.pdf
 *.psd
 *.sublime*
+*.md
 node_modules/
 npm-debug.*
 Thumbs.db
-README.md
